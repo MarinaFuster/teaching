@@ -15,12 +15,13 @@ public class Student {
 	private String surnameStudent ;
 	private double gpa;
 
-public Student (String nameCollege, String nameStudent,String surnameStudent,int gpa) {
+public Student (String nameCollege, String nameStudent,String surnameStudent,double gpa) {
 	this.nameCollege=nameCollege;
 	this.nameStudent=nameStudent;
 	this.surnameStudent=surnameStudent;
 	this.setGpa(gpa);
 }
+
 	public String getNameCollege() {
 		return nameCollege;
 	}
