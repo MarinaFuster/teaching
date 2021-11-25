@@ -18,8 +18,8 @@ public class Main {
     	
     	//Create two students (you can choose their names)
     	Student [] students = new Student [2];
-    	students[0] = new Student ("Marina College", "Napo","Devesa",0); 
-    	students[1] = new Student ("Marina College", "Laura","Dal",0) ;
+    	students[0] = new Student (null, "Napo","Devesa",0); 
+    	students[1] = new Student (null, "Laura","Dal",0) ;
    
     	//Set gpa of 3.4 for first student and 2.4 for second student
     	students[0].setGpa(3.4);
