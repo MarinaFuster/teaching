@@ -14,12 +14,12 @@ public class Main {
     	
     	//Print the college name for all students.
     	System.out.println("The name of all students college:");	
-    	printNameCollege();
+    	printNameCollege("Marina College");
     	
     	//Create two students (you can choose their names)
     	Student [] students = new Student [2];
-    	students[0] = new Student ("Napo","Devesa",0); 
-    	students[1] = new Student ("Laura","Dal",0) ;
+    	students[0] = new Student ("Marina College", "Napo","Devesa",0); 
+    	students[1] = new Student ("Marina College", "Laura","Dal",0) ;
    
     	//Set gpa of 3.4 for first student and 2.4 for second student
     	students[0].setGpa(3.4);
@@ -39,9 +39,8 @@ public class Main {
 			System.out.println(nameStudent + " " + surnameStudent);		
 		}
 		
-		private static void printNameCollege(){
-			String nameCollege= "Marina College";
-			System.out.println(nameCollege );		
+		private static void printNameCollege(String college){
+			System.out.println(college);		
 		}	
 		
 	}
