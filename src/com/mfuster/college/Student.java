@@ -10,24 +10,24 @@ package com.mfuster.college;
 //     - the name of the college, name of the student and lastname of the student cannot change.
 public class Student {
 	
-	private String nameCollege ;
+	private final String nameCollege = "Marina College";
 	private String nameStudent ;
 	private String surnameStudent ;
 	private double gpa;
 
-public Student (String nameCollege, String nameStudent,String surnameStudent,double gpa) {
-	this.nameCollege=nameCollege;
+
+public Student (String nameStudent,String surnameStudent, double gpa) {
+
 	this.nameStudent=nameStudent;
 	this.surnameStudent=surnameStudent;
 	this.setGpa(gpa);
 }
 
+
 	public String getNameCollege() {
 		return nameCollege;
 	}
-	public void setNameCollege(String nameCollege) {
-		this.nameCollege = nameCollege;
-	}
+
 	public String getNameStudent() {
 		return nameStudent;
 	}

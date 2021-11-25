@@ -11,34 +11,27 @@ import java.time.LocalDate;
 //     - You must be able to complete this in order
 public class Main {
     public static void main(String[] args) {
- 	
-    	//Create two students (you can choose their names)
-    	Student numberOne = new Student ("Marina College", "Napo","Devesa",0); 
-    	Student numberTwo = new Student ("Ba College", "Laura","Dal",0) ;
-
-    	//Print the college name for all students.
-    	String numberOneCollege= numberOne.getNameCollege();
-    	String numberTwoCollege= numberTwo.getNameCollege();
     	
-    	printNameCollege(numberOneCollege);
-    	printNameCollege(numberTwoCollege);
+    	//Print the college name for all students.
+    	System.out.println("The name of all students college:");	
+    	printNameCollege();
+    	
+    	//Create two students (you can choose their names)
+    	Student [] students = new Student [2];
+    	students[0] = new Student ("Napo","Devesa",0); 
+    	students[1] = new Student ("Laura","Dal",0) ;
    
     	//Set gpa of 3.4 for first student and 2.4 for second student
-    	numberOne.setGpa(3.4);
-    	numberTwo.setGpa(2.4); 	
-
-    	String numberOneName= numberOne.getNameStudent();
-    	String numberOneSurname= numberOne.getSurnameStudent();
+    	students[0].setGpa(3.4);
+    	students[1].setGpa(2.4); 	
     	
-    	String numberTwoName= numberTwo.getNameStudent();
-    	String numberTwoSurname= numberTwo.getSurnameStudent();
+    	for (int i = 0 ; i<2; i++) {
+        	printName(students[i].getNameStudent(), students[i].getSurnameStudent());
+    	}
 
-    	printName(numberTwoName, numberTwoSurname);
-    	printName(numberOneName, numberOneSurname);
-    	
     	//Set gpa of 3.8 for first student
-    	numberOne.setGpa(3.8);
-    	System.out.println(numberOne.getGpa());	
+    	students[0].setGpa(3.8);
+    	System.out.println(students[0].getGpa());	
     	
     }
 
@@ -46,7 +39,8 @@ public class Main {
 			System.out.println(nameStudent + " " + surnameStudent);		
 		}
 		
-		private static void printNameCollege(String nameCollege) {
+		private static void printNameCollege(){
+			String nameCollege= "Marina College";
 			System.out.println(nameCollege );		
 		}	
 		
