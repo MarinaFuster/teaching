@@ -13,11 +13,9 @@ public class Mammals extends Animals{
 		this.earthSpeed=earthSpeed;
 	}
 
-
 	public int getEarthSpeed() {
 		return earthSpeed;
 	}
-
 
 	public void setEarthSpeed(int earthSpeed) {
 		this.earthSpeed = earthSpeed;
@@ -28,5 +26,4 @@ public class Mammals extends Animals{
 		return "TAMTAMTAM";
 		
 	}
-
 }

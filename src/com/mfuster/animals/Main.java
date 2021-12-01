@@ -25,10 +25,18 @@ import com.mfuster.college.Student;
 public class Main {
     public static void main(String[] args) {
     	
-    	Reptils animalOne = new Reptils (3, "green",2,2, 34, AnimalsGroup.Reptils, 35) ;
+    	Reptils reptilOne = new Reptils (3, "green",2,2, 34, AnimalsGroup.Reptils, 35);
+    	Mammals mammalOne = new Mammals (3, "green",2,2, 34, AnimalsGroup.Reptils, 35);
+    	Birds birdOne = new Birds (3, "green",2,2, 34, AnimalsGroup.Reptils, 35);
     	
     	System.out.println("Reptil noise away: ");
-    	System.out.println(animalOne.makeNoiseAway());
+    	System.out.println(reptilOne.makeNoiseAway());
+    	
+    	System.out.println("Mammal noise away: ");
+    	System.out.println(mammalOne.makeNoiseAway());
+    	
+    	System.out.println("Bird noise away: ");
+    	System.out.println(birdOne.makeNoiseAway());
 
     }
    
