@@ -1,5 +1,8 @@
 package com.mfuster.animals;
 
+import com.mfuster.animals.AnimalsInterface.AnimalsGroup;
+import com.mfuster.college.Student;
+
 // Create a program where you can initialize different types of animals
 // All animals have:
 //   - quantity of legs,
@@ -21,9 +24,12 @@ package com.mfuster.animals;
 
 public class Main {
     public static void main(String[] args) {
+    	
+    	Reptils animalOne = new Reptils (3, "green",2,2, 34, AnimalsGroup.Reptils, 35) ;
+    	
+    	System.out.println("Reptil noise away: ");
+    	System.out.println(animalOne.makeNoiseAway());
 
     }
-    
-    
-    
+   
 }
