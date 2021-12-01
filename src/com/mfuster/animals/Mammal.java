@@ -1,14 +1,13 @@
 package com.mfuster.animals;
 
-import com.mfuster.animals.AnimalsInterface.AnimalsGroup;
+import com.mfuster.animals.AnimalGroup;
 
-public class Mammals extends Animals{
+public class Mammal extends Animal{
 	
 	private int earthSpeed;
 
-
-	public Mammals(int quantityLegs, String color, int quantityEars, int quantityEyes, int age,
-			AnimalsGroup animalGroup, int earthSpeed) {
+	public Mammal(int quantityLegs, String color, int quantityEars, int quantityEyes, int age,
+			AnimalGroup animalGroup, int earthSpeed) {
 		super(quantityLegs, color, quantityEars, quantityEyes, age, animalGroup);
 		this.earthSpeed=earthSpeed;
 	}
@@ -23,7 +22,6 @@ public class Mammals extends Animals{
 	
 	@Override
 	public String makeNoiseAway () {
-		return "TAMTAMTAM";
-		
+		return "TAMTAMTAM";	
 	}
 }

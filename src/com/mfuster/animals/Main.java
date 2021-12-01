@@ -1,7 +1,6 @@
 package com.mfuster.animals;
 
-import com.mfuster.animals.AnimalsInterface.AnimalsGroup;
-import com.mfuster.college.Student;
+import com.mfuster.animals.AnimalGroup;
 
 // Create a program where you can initialize different types of animals
 // All animals have:
@@ -25,9 +24,10 @@ import com.mfuster.college.Student;
 public class Main {
     public static void main(String[] args) {
     	
-    	Reptils reptilOne = new Reptils (3, "green",2,2, 34, AnimalsGroup.Reptils, 35);
-    	Mammals mammalOne = new Mammals (3, "green",2,2, 34, AnimalsGroup.Reptils, 35);
-    	Birds birdOne = new Birds (3, "green",2,2, 34, AnimalsGroup.Reptils, 35);
+    	//creating the tree animals program
+    	Reptil reptilOne = new Reptil (3, "green",2,2, 34, AnimalGroup.Reptils, 35);
+    	Mammal mammalOne = new Mammal (3, "green",2,2, 34, AnimalGroup.Mammals, 35);
+    	Bird birdOne = new Bird (3, "green",2,2, 34, AnimalGroup.Birds, 35);
     	
     	System.out.println("Reptil noise away: ");
     	System.out.println(reptilOne.makeNoiseAway());
