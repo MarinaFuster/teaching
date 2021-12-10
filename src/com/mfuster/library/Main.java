@@ -1,7 +1,9 @@
 package com.mfuster.library;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Date;
 import java.util.List;
 
@@ -18,13 +20,12 @@ public class Main {
 
         // *************** PART TWO ***************
         // What if I want three lists? One sorted by title first, other sorted by author first
-        // and other sorted by date first.
+        // and other sorted by year first.
 
         // *************** PART THREE ***************
     	// I want to create a SET of books, taken from the list.
     	
-    
-    	
+
     	Book harryPotter = new Book("Harry Potter", "J.K.Rowling", 1997);
         Book frankenstein = new Book("Frankenstein", "Mary Shelley", 1818);
         Book hungerGames = new Book("Hunger Games", "Suzanne Collins", 2008);
@@ -45,6 +46,11 @@ public class Main {
         
         Collections.sort(listBook);
         printBookstore( listBook , "tite" );
+       
+        AuthorComparator authorComparator = new AuthorComparator();  
+        listBook.sort(authorComparator);
+        
+        printBookstore( listBook , "author" );
 
     }
     
@@ -55,4 +61,6 @@ public class Main {
         }
         System.out.println("\n");
     }
+    
+
 }
